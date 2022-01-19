@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>IMC Calculator</title>
+
+
+</head>
+<body>
+    
+    <main>
+        <div class="main__div__form--contain">
+            <div class="main__div__mjs--contain">
+                <h4>BODY MASS INDEX CALCULATOR (BMI)</h4>
+                <p>This calculator provides the BMI and
+                    the corresponding weight level category according to the BMI.
+                    Use it for adults 20 years and older and children 6 years and older.
+                </p>
+            </div>
+            <form action="get">
+                <div class="main__div__form__div--inputContain">
+                    <div class="form__item" id="form__item--name">    
+                        <label for="name">NAME</label>
+                        <input type="text" name="name" id="userName" class="input" required>
+                    </div>
+                    <div class="form__itemShort--contain">
+                        <div class="form__item  form-short" id="form__item--age">
+                            <label for="age">AGE</label>
+                            <input type="numbers" name="age" id="userAge" class="input" required>
+                        </div>
+                        <div class="form__item  form-short" id="form__item--height">
+                            <label for="height">HEIGHT</label>
+                            <input type="text" name="height" id="userHeight" class="input" required>
+                        </div>
+                        <div class="form__item form-short" id="form__item--weigth">
+                            <label for="weigth">WEIGTH</label>
+                            <input type="text" name="weigth" id="userWeigth" class="input" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" id="send-info" class="btn">GET BMI</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- JQUERY script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- script -->
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
